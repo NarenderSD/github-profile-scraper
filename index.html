@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Scraper - Narender Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <div class="theme-toggle-wrapper">
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
+
+        <header class="header">
+            <h1>Advanced GitHub Profile Scraper</h1>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Enter GitHub Username" class="search-input">
+                <button id="search-btn" class="search-button">Search</button>
+            </div>
+        </header>
+
+        <section id="profile-container" class="profile-section"></section>
+
+        <section id="repo-container" class="repo-section">
+            <h2>Repositories</h2>
+            <div class="repo-header">
+                <label for="sort-repos">Sort by: </label>
+                <select id="sort-repos" class="repo-sort-select">
+                    <option value="stars">Stars</option>
+                    <option value="forks">Forks</option>
+                    <option value="updated">Last Updated</option>
+                </select>
+            </div>
+            <div id="repo-list" class="repo-list"></div>
+        </section>
+
+        <section id="language-analysis" class="language-section">
+            <h2>Language Analysis</h2>
+            <canvas id="language-chart"></canvas>
+        </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>Created with ❤️ by <a href="https://www.linkedin.com/in/narender-singh1/" target="_blank">Narender Singh</a></p>
+        </footer>
+    </div>
+</body>
+</html>
