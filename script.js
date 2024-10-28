@@ -59,7 +59,7 @@ function displayRepos(repos) {
                 <p><strong>Stars:</strong> ${repo.stargazers_count}</p>
                 <p><strong>Forks:</strong> ${repo.forks_count}</p>
                 <p><strong>Last Updated:</strong> ${new Date(repo.updated_at).toLocaleDateString()}</p>
-                ${repo.homepage ? `<a href="${repo.homepage}" target="_blank">Live Link</a>` : ''}
+                ${repo.homepage ? `<a href="${repo.homepage}" target="_blank">Live 🌐 Link 🔗</a>` : ''}
                 <a href="${repo.html_url}" target="_blank"><img src="assets/img/github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;"></a>
             </div>
         `;
